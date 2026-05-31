@@ -7,6 +7,16 @@ pairs a locally running Hermes plugin with the Even Hub glasses app without
 putting per-user LAN, Tailscale, or root bridge-token values into a published
 Even Hub package.
 
+See [docs/relay-architecture.md](docs/relay-architecture.md) for the whitelist
+facts, auth model, repository split, and device verification checklist.
+
+## Related repos
+
+- [hermes-evenhub-bridge](https://github.com/huntsyea/hermes-evenhub-bridge) —
+  Hermes-side plugin and local direct WebSocket transport.
+- [hermes-even-hub-app](https://github.com/huntsyea/hermes-even-hub-app) —
+  Even Hub glasses-side app and `app.json` production whitelist.
+
 ## Decisions
 
 - Runtime: Cloudflare Workers + Durable Objects.
